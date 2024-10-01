@@ -37,12 +37,12 @@ def send_magic_packet(macaddress: str) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(prog='Wake-on-LAN Skript', description='Weckt Hosts auf')
+    parser = argparse.ArgumentParser(prog='Simple Wake-on-LAN', description='Wake up your hosts by sending a "magic packet"!')
     parser.add_argument('-l', '--list', required=False, action='store_true',
-                        help='Listet alle Hosts in der config.yaml auf')
+                        help='list all aliases and their mac addresses from config.yaml')
     group = parser.add_mutually_exclusive_group()
-    group.add_argument('-n', '--name', type=str, help='Hostname (muss vorher in der config.yaml eingetragen werden!')
-    group.add_argument('-m', '--mac', type=str, help='MAC-Adresse')
+    group.add_argument('-n', '--name', type=str, help='alias of the host (must be inserted into config.yaml before!)')
+    group.add_argument('-m', '--mac', type=str, help='mac address')
     args = parser.parse_args()
 
     if args.mac:
