@@ -1,0 +1,9 @@
+broadcast_ip: '255.255.255.255'
+default_port: 9
+interface: ''
+hosts:
+  alias1: '00:00:00:00:00:00'
+  alias2: '00.00.00.00.00.01'
+  alias3: '000000000002'
+  alias4: '0000-0000-0003'
+  
