@@ -6,7 +6,7 @@ Wake up your hosts by sending a "magic packet" in Python!
 python3 wakeup.py -h
 options:
   -h, --help            show this help message and exit
-  -l, --list            list all hosts from config.yaml
+  -l, --list            list all aliases and their mac addresses from config.yaml
   -n NAME, --name NAME  alias of the host (must be inserted into config.yaml before!)
   -m MAC, --mac MAC     mac address
 ```
